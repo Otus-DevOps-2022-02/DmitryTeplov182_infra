@@ -1,7 +1,7 @@
 # DmitryTeplov182_infra
 DmitryTeplov182 Infra repository
 
-## ДЗ 3 Полезное
+## Полезное
 
 ```bash
 git update-index --chmod=+x script.sh 
@@ -65,5 +65,5 @@ yc compute instance create \
   --metadata serial-port-enable=1 
 ```
 
-testapp_IP = 51.250.64.46  
+testapp_IP = 51.250.2.189  
 testapp_port = 9292
