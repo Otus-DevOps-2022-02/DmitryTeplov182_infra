@@ -58,5 +58,5 @@ yc compute instance create \
   --metadata serial-port-enable=1 
 ```
 
-testapp_IP = 51.250.64.46
+testapp_IP = 51.250.64.46  
 testapp_port = 9292
