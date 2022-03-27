@@ -29,7 +29,7 @@ Host someinternalhost
         ProxyJump bastion
 ```
 
-bastion_IP = 217.28.228.16
+bastion_IP = 217.28.228.16  
 someinternalhost_IP = 10.129.0.24
 
 Для ssl:
