@@ -1,6 +1,13 @@
 # DmitryTeplov182_infra
 DmitryTeplov182 Infra repository
 
+## ДЗ 3 Полезное
+
+```bash
+git update-index --chmod=+x script.sh 
+```
+Фикс прав, если глючит из - за винды.
+
 ## ДЗ 3
 Команда для прыжка через бастион во внутренную машину с передачей ключа:
 ```bash
