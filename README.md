@@ -8,6 +8,11 @@ git update-index --chmod=+x script.sh
 ```
 Фикс прав, если глючит из - за винды.
 
+```bash
+cat output.json | jq -r ' .builds[0].artifact_id'
+```
+простой выбор из json без кавычек
+
 ## ДЗ 3
 Команда для прыжка через бастион во внутренную машину с передачей ключа:
 ```bash
@@ -67,3 +72,10 @@ yc compute instance create \
 
 testapp_IP = 51.250.2.189  
 testapp_port = 9292
+
+## ДЗ 4
+
+- Поработал с Packer
+- Запек immutable образ с приложением, которое стартует при разворачивании VM (immutable.json)
+- Создал скрипт create-reddit-vm.sh в директории config-scripts, который из шаблона immutable.json создает образ и поднимает виртуалку на базе этого диска.
+- Попробовал выгружать значения с помощью jq
