@@ -1,0 +1,8 @@
+cloud_id                  = "b1g"
+folder_id                 = "b1g"
+image_id                  = "fd"
+subnet_id                 = "e90"
+public_key_path           = "~/.ssh/yc.pub"
+service_account_key_file  = "terraform.json"
+private_key_path          = "~/.ssh/yc"
+instances                 = 2

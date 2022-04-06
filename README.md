@@ -4,7 +4,7 @@ DmitryTeplov182 Infra repository
 ## Полезное
 
 ```bash
-git update-index --chmod=+x script.sh 
+git update-index --chmod=+x script.sh
 ```
 Фикс прав, если глючит из - за винды.
 
@@ -41,7 +41,7 @@ Host someinternalhost
         ProxyJump bastion
 ```
 
-bastion_IP = 217.28.228.16  
+bastion_IP = 217.28.228.16
 someinternalhost_IP = 10.129.0.24
 
 Для ssl:
@@ -67,10 +67,10 @@ yc compute instance create \
   --create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=10GB \
   --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
   --metadata-from-file user-data=metadata.yaml \
-  --metadata serial-port-enable=1 
+  --metadata serial-port-enable=1
 ```
 
-testapp_IP = 51.250.2.189  
+testapp_IP = 51.250.2.189
 testapp_port = 9292
 
 ## ДЗ 4
@@ -79,3 +79,12 @@ testapp_port = 9292
 - Запек immutable образ с приложением, которое стартует при разворачивании VM (immutable.json)
 - Создал скрипт create-reddit-vm.sh в директории config-scripts, который из шаблона immutable.json создает образ и поднимает виртуалку на базе этого диска.
 - Попробовал выгружать значения с помощью jq
+
+## ДЗ 5
+
+- Поработал с terraform
+- Научился описывать инфраструктуру, планировать изменения, применять изменения, пересоздавать необходимые компоненты и удалять их.
+- Создал балансировщик нагрузки в облаке и привязал к нему две виртуалки с приложением.
+- Сократил код, добавив возможность указывать количество виртуалок.
+
+По поводу недостатков такого подхода: пока, мне кажется что использовать проверку по tcp для web приложения не лучшая идея. Порт может быть доступен, но само приложение нет. Надо использовать хелчеки, но я их не нашел в приложении.
