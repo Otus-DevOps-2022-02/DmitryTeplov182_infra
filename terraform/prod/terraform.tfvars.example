@@ -1,0 +1,13 @@
+cloud_id                  = "id"
+folder_id                 = "id"
+image_id                  = "id"
+subnet_id                 = "id"
+public_key_path           = "~/.ssh/yc.pub"
+service_account_key_file  = "terraform.json"
+private_key_path          = "~/.ssh/yc"
+instances                 = 1
+app_disk_image            = "id"
+db_disk_image             = "id"
+access_key                = "key"
+secret_key                = "key"
+bucket_name               = "name"
