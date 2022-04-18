@@ -11,6 +11,7 @@ module "db" {
   db_disk_image    = var.db_disk_image
   subnet_id        = var.subnet_id
   private_key_path = var.private_key_path
+  deploy           = var.deploy
 }
 
 module "app" {
@@ -20,4 +21,5 @@ module "app" {
   subnet_id        = var.subnet_id
   private_key_path = var.private_key_path
   db_ip            = module.db.db_internal_ip
+  deploy           = var.deploy
 }
