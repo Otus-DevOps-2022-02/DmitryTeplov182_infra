@@ -8,4 +8,4 @@ variables.json
 __pycache__/
 *.py[cod]
 *$py.class
-yc_dyn_ans.yml
+yc_compute.yml
