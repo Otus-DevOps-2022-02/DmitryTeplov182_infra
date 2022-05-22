@@ -4,3 +4,8 @@ variables.json
 *.tfstate.backup
 *.tfvars
 .terraform
+*.retry
+__pycache__/
+*.py[cod]
+*$py.class
+yc_compute.yml
